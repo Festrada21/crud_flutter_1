@@ -1,0 +1,13 @@
+npm i express tedious sequelize morgan cors dotenv
+
+npm i typescript ts-node-dev @types/express @types/morgan @types/cors -D
+
+package.json>
+  "scripts": {
+    "dev": "ts-node-dev index.ts"
+  },
+
+--para configurar typescript
+  npx tsc --init
+
+  npm i sequelize-typescript

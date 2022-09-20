@@ -1,0 +1,19 @@
+USE master
+GO
+
+DROP DATABASE IF EXISTS dbtest;
+CREATE DATABASE dbtest
+GO
+
+USE dbtest;
+GO
+
+DROP TABLE IF EXISTS CatalogoPais;
+CREATE TABLE CatalogoPais
+(
+    PaisId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    Nombre VARCHAR(100) NOT NULL,
+    FechaEdicion DATETIME DEFAULT GETDATE(),
+    Habilitado BIT NOT NULL DEFAULT 1,
+    UNIQUE(Nombre)
+);
