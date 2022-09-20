@@ -11,3 +11,5 @@ package.json>
   npx tsc --init
 
   npm i sequelize-typescript
+
+  https://github.com/FaztWeb/mevn-typescript/blob/master/server/routes/index.ts
